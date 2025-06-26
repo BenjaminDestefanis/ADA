@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADA Devs School | Cursos Online de Programación e Inglés</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-code"></i>
+                    ADA Devs School
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#programacion">Programación</a></li>
+                    <li><a href="#ingles">Inglés</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#" class="btn">Iniciar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Aprende <span>Programación</span> e <span>Inglés</span> Online</h1>
+                    <p>Domina las habilidades más demandadas del mercado con nuestros cursos interactivos. Aprende a tu propio ritmo con instructores expertos y lleva tu carrera al siguiente nivel.</p>
+                    <div class="hero-buttons">
+                        <a href="#programacion" class="btn">Ver Cursos</a>
+                        <a href="#" class="btn btn-secondary">Prueba Gratis</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&h=400&q=80" alt="Aprendizaje online">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>Estudiantes</p>
+                </div>
+                <div class="stat-item">
+                    <h3>120+</h3>
+                    <p>Cursos Disponibles</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Tasa de Satisfacción</p>
+                </div>
+                <div class="stat-item">
+                    <h3>250+</h3>
+                    <p>Instructores Expertos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Por Qué Elegirnos</h2>
+                <p>Descubre las ventajas de aprender con nuestros cursos online de alta calidad</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Contenido Actualizado</h3>
+                    <p>Nuestros cursos se mantienen siempre actualizados con las últimas tecnologías y metodologías de enseñanza.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Únete a nuestra comunidad de estudiantes y profesionales para compartir conocimientos y resolver dudas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Instructores Expertos</h3>
+                    <p>Aprende de profesionales con amplia experiencia en la industria y excelentes habilidades pedagógicas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificados Reconocidos</h3>
+                    <p>Recibe certificados al completar tus cursos que puedes añadir a tu currículum y perfil de LinkedIn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses" id="programacion">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Cursos Destacados</h2>
+                <p>Explora nuestros cursos más populares de programación e inglés</p>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="ingles-tab">Inglés</button>
+                <!-- <button class="tab-btn" data-tab="ingles-tab">Español</button> -->
+                <button class="tab-btn" data-tab="programacion-tab">Programacion</button>
+                <button class="tab-btn" data-tab="ia-tab">Inteligencia Artificial</button>
+                <button class="tab-btn" data-tab="desarrollo-tab">Desarrollo Web</button>
+                
+            </div>
+
+            <!-- CURSOS INGLES -->
+
+            <div id="ingles-tab" class="tab-content active">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1503252947848-7338d3f92f31?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category english">Inglés General</span>
+                            <h3>Inglés para Principiantes</h3>
+                            <p>Curso completo para comenzar desde cero con vocabulario, gramática y pronunciación.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 50 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Principiante</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1565538420870-da08ff96a207?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category english">Inglés de Negocios</span>
+                            <h3>Inglés Corporativo Avanzado</h3>
+                            <p>Desarrolla habilidades de comunicación profesional para reuniones, presentaciones y negociaciones.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 45 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category english">Preparación TOEFL</span>
+                            <h3>Curso Intensivo TOEFL</h3>
+                            <p>Preparación completa para el examen TOEFL con estrategias, prácticas y simulacros.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 60 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CURSOS ESPAÑOL -->
+
+            <div id="español-tab" class="tab-content">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Español</span>
+                            <h3>Español</h3>
+                            <p>Español basico.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 40 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('./assets/media/images/backend.jpg');">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Español</span>
+                            <h3>Español</h3>
+                            <p>Español intermedio.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 60 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Desarrollo Web Full Stack</span>
+                            <h3>Desarrollo Full Stack con React y Node</h3>
+                            <p>Aprende a crear aplicaciones web completas con el stack MERN (MongoDB, Express, React, Node).</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 80 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CURSOS PROGRAMACION -->
+            <div id="programacion-tab" class="tab-content">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Python</span>
+                            <h3>Fundamentos Python</h3>
+                            <p>Aprende los fundamentos de la programacion, desarrollando con Python.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 40 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('./assets/media/images/backend.jpg');"></div>
+                        <div class="course-content">
+                            <span class="course-category">JavaScript</span>
+                            <h3>Fundamento JavaScript</h3>
+                            <p>El lenguaje fundamental del desarrollo web, con este curso podras ser un experto en JavaScript.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 60 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category">PHP</span>
+                            <h3>Fundamentos PHP</h3>
+                            <p>Uno de los lenguajes mas antiguos, que sin duda, mas del 70 % de la web actual estan en este lenguaje, aprende a programar en este lenguaje con este curso.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 80 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Inteligencia Artificial -->
+            <div id="ia-tab" class="tab-content">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('./assets/media/images/machine.jpg')"></div>
+                        <div class="course-content">
+                            <span class="course-category">Machine-Learning</span>
+                            <h3>Fundamentos Machine-Learning</h3>
+                            <p>Aprende los fundamentos de Machine Learning.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 40 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('./assets/media/images/deep-learning.jpg');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Deep-Learning</span>
+                            <h3>Fundamentos Deep-Learning</h3>
+                            <p>Aprender tanto a desarrollar como utilizar Deep-Learning, para nuevos proyectos, como para proyectos existentes.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 60 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('assets/media/images/nlp.jpg');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Procesamiento de Lenguaje Natural (NLP)</span>
+                            <h3>NLP</h3>
+                            <p>Aprende a desarrollar ti IA, creando y programando software para que entienda el proceso de lenguaje humano.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 80 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desarrollo Web -->
+            
+            <div id="desarrollo-tab" class="tab-content">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Desarrollo Web Front End</span>
+                            <h3>Front End</h3>
+                            <p>Aprende todo lo que necesitas desde 0 para poder crear paginas webs basicas.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 40 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <!-- <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&h=200&q=80');"></div> -->
+                        <div class="course-image" style="background-image: url('./assets/media/images/backend.jpg');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Desarrollo Web Back End</span>
+                            <h3>Back End</h3>
+                            <p>Domina las tegnologias necesarias como back end, para construir APIs funcionales, como e-commerce, LLM, etc..</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 60 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=600&h=200&q=80');"></div>
+                        <div class="course-content">
+                            <span class="course-category">Desarrollo Web Full Stack</span>
+                            <h3>Desarrollo Full Stack con React y Node</h3>
+                            <p>Aprende a crear aplicaciones web completas con el stack MERN (MongoDB, Express, React, Node).</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 80 horas</span>
+                                <span><i class="fas fa-user-graduate"></i> Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo Que Dicen Nuestros Estudiantes</h2>
+                <p>Historias de éxito de estudiantes que transformaron sus carreras</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>El curso de JavaScript me dio las bases sólidas que necesitaba para conseguir mi primer trabajo como desarrollador frontend. Las explicaciones son claras y los proyectos prácticos son geniales.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>Desarrollador Frontend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Gracias al curso de inglés corporativo, pude mejorar mi confianza al hablar en reuniones internacionales. Ahora lidero proyectos con equipos globales sin problemas de comunicación.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');"></div>
+                        <div class="author-info">
+                            <h4>María Fernández</h4>
+                            <p>Gerente de Proyectos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>El curso de Python para ciencia de datos superó mis expectativas. En solo 3 meses pude aplicar los conocimientos en mi trabajo y obtener un aumento significativo en mi salario.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/67.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Javier López</h4>
+                            <p>Data Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Comienza Tu Viaje de Aprendizaje Hoy</h2>
+            <p>Únete a miles de estudiantes que ya están transformando sus carreras con nuestros cursos de programación e inglés.</p>
+            <a href="#" class="btn">Comenzar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CodeLingua</h3>
+                    <p>Plataforma líder en cursos online de programación e inglés con enfoque práctico y resultados comprobados.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Cursos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Programación Web</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Ciencia de Datos</a></li>
+                        <li><a href="#">Inglés para Principiantes</a></li>
+                        <li><a href="#">Inglés de Negocios</a></li>
+                        <li><a href="#">Preparación TOEFL/IELTS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#programacion">Cursos de Programación</a></li>
+                        <li><a href="#ingles">Cursos de Inglés</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@ADAdevsschool.com</li>
+                        <li><i class="fas fa-phone"></i> +54 2664 950045</li>
+                        <li><i class="fas fa-phone"></i> +34 645 342351</li>
+                        <li><i class="fas fa-map-marker-alt"></i> San Luis - Argentina</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Islas Canarias - España</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CodeLingua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"> </script>
+</body>
+</html>
