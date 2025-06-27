@@ -1,6 +1,50 @@
 // src/components/Header.js
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import { FaGraduationCap, FaBars, FaTimes } from 'react-icons/fa';
+
+
+// Estilos con styled-components
+const Navbar = styled.nav`
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+`;
+
+const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4361ee;
+  cursor: pointer;
+  
+  span {
+    color: #f72585;
+  }
+`;
+
+const NavLinks = styled.ul`
+  display: flex;
+  gap: 30px;
+  list-style: none;
+`;
+
+const NavLink = styled.li`
+  a {
+    color: #212529;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+    &:hover {
+      color: #4361ee;
+    }
+  }
+`;
 
 const Header = ({ setView }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,78 +57,22 @@ const Header = ({ setView }) => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <nav className="flex justify-between items-center py-4">
-          <div 
-            className="flex items-center text-blue-600 cursor-pointer" 
-            onClick={() => setView('home')}
-          >
-            <FaGraduationCap className="text-2xl mr-2" />
-            <span className="text-2xl font-bold">Apollo<span className="text-pink-500">.</span></span>
-          </div>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item, index) => (
-              <button
-                key={index}
-                onClick={item.action}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-          
-          <div className="hidden md:block">
-            <button 
-              onClick={() => setView('home')}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-colors"
-            >
-              Acceso Anticipado
-            </button>
-          </div>
-          
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-gray-700"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
-        </nav>
+     <Navbar>
+      <div className="container">
+        <Logo onClick={() => setView('home')}>
+          <FaGraduationCap style={{ marginRight: '10px' }} />
+          {/* <FaBars></FaBars>
+          <FaTimes></FaTimes> */}
+          ADA Dev School<span>.</span>
+        </Logo>
         
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-4">
-              {navItems.map((item, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    item.action();
-                    setIsMenuOpen(false);
-                  }}
-                  className="text-gray-700 hover:text-blue-600 font-medium py-2"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <button 
-                onClick={() => {
-                  setView('home');
-                  setIsMenuOpen(false);
-                }}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-colors"
-              >
-                Acceso Anticipado
-              </button>
-            </div>
-          </div>
-        )}
+        <NavLinks>
+          <NavLink><a href="#cursos">Cursos</a></NavLink>
+          <NavLink><a href="#blog">Blog</a></NavLink>
+          <NavLink><a href="#mentorias">Mentorías</a></NavLink>
+        </NavLinks>
       </div>
-    </header>
+    </Navbar>
   );
 };
 
