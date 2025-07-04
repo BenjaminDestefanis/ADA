@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { FaCode, FaLaptopCode, FaUsers, FaChalkboardTeacher, FaCertificate, FaClock, FaUserGraduate } from 'react-icons/fa';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
 
 // Estilos globales
 const GlobalStyle = createGlobalStyle`
@@ -34,7 +36,6 @@ const Container = styled.div`
 `;
 
 
-
 // Botón
 const Button = styled.button`
   display: inline-block;
@@ -56,51 +57,9 @@ const Button = styled.button`
   }
 `;
 
-// Componentes específicos
-const Header = () => {
-  return (
-    <StyledHeader>
-      <Container>
-        <Navbar>
-          <Logo href="#">
-            <FaCode style={{ marginRight: '10px' }} />
-            ADA Dev School
-          </Logo>
-          <NavLinks>
-            <NavLink><a href="#inicio">Inicio</a></NavLink>
-            <NavLink><a href="#programacion">Programación</a></NavLink>
-            <NavLink><a href="#ingles">Inglés</a></NavLink>
-            <NavLink><a href="#testimonios">Testimonios</a></NavLink>
-            <NavLink><a href="#contacto">Contacto</a></NavLink>
-          </NavLinks>
-          <Button>Iniciar Sesión</Button>
-        </Navbar>
-      </Container>
-    </StyledHeader>
-  );
-};
 
-const HeroSection = () => {
-  return (
-    <Hero id="inicio">
-      <Container>
-        <HeroContent>
-          <HeroText>
-            <h1>Aprende <span>Programación</span> e <span>Inglés</span> Online</h1>
-            <p>Domina las habilidades más demandadas del mercado con nuestros cursos interactivos. Aprende a tu propio ritmo con instructores expertos y lleva tu carrera al siguiente nivel.</p>
-            <HeroButtons>
-              <Button as="a" href="#programacion">Ver Cursos</Button>
-              <Button secondary as="a" href="#">Prueba Gratis</Button>
-            </HeroButtons>
-          </HeroText>
-          <HeroImage>
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&h=400&q=80" alt="Aprendizaje online" />
-          </HeroImage>
-        </HeroContent>
-      </Container>
-    </Hero>
-  );
-};
+
+
 
 const StatsSection = () => {
   return (
