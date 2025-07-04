@@ -6,7 +6,7 @@ import { FaGraduationCap, FaBars, FaTimes } from 'react-icons/fa';
 
 // Estilos con styled-components
 const Navbar = styled.nav`
-  background: white;
+  background: red;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   padding: 20px 0;
   position: sticky;
