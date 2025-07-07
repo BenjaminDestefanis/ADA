@@ -1,4 +1,24 @@
 import React from "react";
+import styled, { createGlobalStyle } from 'styled-components';
+
+// Componente Contenedor
+
+const Container = styled.div`
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+`;
+
+// Estilos para componentes
+const StyledHeader = styled.header`
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+`; 
 
 function Header() {
   return (

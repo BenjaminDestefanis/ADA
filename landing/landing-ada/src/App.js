@@ -476,15 +476,7 @@ const FooterSection = () => {
   );
 };
 
-// Estilos para componentes
-const StyledHeader = styled.header`
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-`;
+
 
 const Navbar = styled.nav`
   display: flex;
